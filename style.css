@@ -1,0 +1,220 @@
+/* Fondo negro base */
+body {
+    margin: 0;
+    background: #000;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+/* Fondo láser */
+.bg-laser {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: #000;
+    overflow: hidden;
+}
+
+/* Rayos láser dorados */
+.laser {
+    position: absolute;
+    width: 200%;
+    height: 6px;
+    background: linear-gradient(90deg, transparent, #FFD700, transparent);
+    opacity: 1;
+    transform: rotate(45deg);
+    animation: laserMove 6s linear infinite;
+}
+
+.laser:nth-child(2) {
+    transform: rotate(-45deg);
+    animation-duration: 8s;
+}
+
+.laser:nth-child(3) {
+    transform: rotate(25deg);
+    animation-duration: 10s;
+}
+
+/* Animación */
+@keyframes laserMove {
+    0% { top: -20%; left: -50%; }
+    50% { top: 120%; left: 50%; }
+    100% { top: -20%; left: -50%; }
+}
+
+/* Asegura que el contenido esté encima */
+header, section, footer {
+    position: relative;
+    z-index: 10;
+}
+
+/* HEADER */
+header {
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    color: #D4AF37;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+}
+
+nav a {
+    color: #C0C0C0;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    color: #D4AF37;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #C0C0C0;
+    max-width: 600px;
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 12px 35px;
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #D4AF37;
+    color: #000;
+}
+
+/* SHOWCASE */
+.showcase {
+    padding: 80px 50px;
+}
+
+.showcase h3 {
+    font-size: 2.5rem;
+    color: #D4AF37;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #111;
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(212,175,55,0.4);
+}
+
+/* FOOTER */
+footer {
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid #333;
+    color: #C0C0C0;
+}
+
+/* FORMULARIO DE CONTACTO */
+.contacto {
+    padding: 80px 50px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto h2 {
+    font-size: 3rem;
+    color: #D4AF37;
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    color: #C0C0C0;
+    margin-bottom: 40px;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario label {
+    text-align: left;
+    color: #D4AF37;
+    font-weight: 600;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    background: #111;
+    border: 1px solid #D4AF37;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.formulario textarea {
+    height: 150px;
+    resize: none;
+}
+
+.formulario button {
+    padding: 12px;
+    background: transparent;
+    border: 2px solid #D4AF37;
+    color: #D4AF37;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background: #D4AF37;
+    color: #000;
+}
+
+.exito {
+     
+    font-size: 2.5rem;      /* letra grande */
+    font-weight: 800;       /* negritas fuertes */
+    color: #00ff4c;         /* verde tipo aprobación */
+    text-align: center;     /* centrado (opcional) */
+    margin: 20px 0;         /* separación */
+}
+

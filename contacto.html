@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto - EMPRESAS GUMA</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<header>
+    <h1>EMPRESAS GUMA</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="tendencias.html">Tendencias</a>
+        <a href="novedades.html">Novedades</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<section class="contacto">
+    <h2>Contacto</h2>
+    <p>Envíanos un mensaje y nos pondremos en contacto contigo.</p>
+
+    <form class="formulario" action="https://formsubmit.co/alexgumo203+plus@gmail.com" method="POST">
+
+        <!-- Evita spam -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Redirección después de enviar -->
+        <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
+        <label>Nombre completo</label>
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+
+        <label>Correo electrónico</label>
+        <input type="email" name="correo" placeholder="correo@ejemplo.com" required>
+
+        <label>Teléfono</label>
+        <input type="tel" name="telefono" placeholder="000-000-0000">
+
+        <label>Mensaje</label>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+    </form>
+</section>
+
+
+<footer>
+    © 2026 EMPRESAS GUMA — Todos los derechos reservados
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
