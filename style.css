@@ -60,7 +60,8 @@ header, section, footer {
 
 /* HEADER */
 header {
-    background: rgba(0, 0, 0, 0.85);
+    background-color: #000;
+    background: rgba(0,0,0,0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 187, 0, 0.3);
 
