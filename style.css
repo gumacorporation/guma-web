@@ -8,10 +8,7 @@ body {
 
 /* Fondo para página de contacto */
 .contacto-page{
-    background-image: url('/fondocontact.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color:red
 }
 
 /* Fondo láser */
