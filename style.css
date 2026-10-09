@@ -66,6 +66,10 @@ header {
 nav{
     background-color: #000;
     padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
@@ -157,6 +161,7 @@ footer {
 
 /* FORMULARIO DE CONTACTO */
 .contacto {
+    min-height: calc(100vh - 120px);
     padding: 80px 50px;
     text-align: center;
     position: relative;
