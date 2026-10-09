@@ -60,10 +60,9 @@ header, section, footer {
 
 /* HEADER */
 header {
-    background: transparent;
-}
 
 nav{
+    background: transparent;
     background-color: #000;
     padding: 20px 40px;
 
