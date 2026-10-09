@@ -227,3 +227,20 @@ footer {
     font-weight: 400;
 }
 
+.boton-2 {
+    background: #ffffff;
+    color: #000000;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px 28px;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+}
+
+.boton-2:hover {
+    background: transparent;
+    color: #ffffff;
+}
