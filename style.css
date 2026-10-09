@@ -60,12 +60,9 @@ header, section, footer {
 
 /* HEADER */
 header {
-    padding: 25px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #333;
-}
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 187, 0, 0.3);
 
 header h1 {
     color: #D4AF37;
