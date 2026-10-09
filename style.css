@@ -6,6 +6,15 @@ body {
     color: #fff;
 }
 
+/* Fondo para página de contacto */
+body2 {
+    background-image: url("fondocontac.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 /* Fondo láser */
 .bg-laser {
     position: fixed;
