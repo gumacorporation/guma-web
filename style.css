@@ -8,7 +8,7 @@ body {
 
 /* Fondo para página de contacto */
 body2 {
-    background-image: url("fondocontac.jpg");
+    background-image: url("/fondocontac.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
